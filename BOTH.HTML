@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combined Styled Tables</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+            border: none; 
+            background-color: #F0F0F0;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 1.2em; 
+            color: #333;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: none !important; 
+        }
+
+        /* Product Table Styles */
+        .product-table {
+            border: none; 
+        }
+        .product-table thead {
+            background-color: #1A237E;
+            color: #FFFF00;
+            font-size: 1.1em;
+        }
+        .product-table tbody tr:nth-child(1) td:nth-child(1) {
+            background-color: #FF5722;
+            color: #000000;
+        }
+        .product-table tbody tr:nth-child(1) td:nth-child(2) {
+            background-color: #FFCCBC;
+            color: #880E4F;
+        }
+        .product-table tbody tr:nth-child(1) td:nth-child(3) {
+            background-color: #BF360C;
+            color: #FFFFFF;
+        }
+        .product-table tbody tr:nth-child(1) td:nth-child(4) {
+            background-color: #E64A19;
+            color: #00BCD4;
+        }
+        .product-table tbody tr:nth-child(2) td:nth-child(1) {
+            background-color: #009688;
+            color: #FF00FF;
+        }
+        .product-table tbody tr:nth-child(2) td:nth-child(2) {
+            background-color: #80CBC4;
+            color: #1A237E;
+        }
+        .product-table tbody tr:nth-child(2) td:nth-child(3) {
+            background-color: #004D40;
+            color: #FFEB3B;
+        }
+        .product-table tbody tr:nth-child(2) td:nth-child(4) {
+            background-color: #4DB6AC;
+            color: #E91E63;
+        }
+        .product-table tbody tr:nth-child(3) td:nth-child(1) {
+            background-color: #673AB7;
+            color: #FF9800;
+        }
+        .product-table tbody tr:nth-child(3) td:nth-child(2) {
+            background-color: #B39DDB;
+            color: #000000;
+        }
+        .product-table tbody tr:nth-child(3) td:nth-child(3) {
+            background-color: #5E35B1;
+            color: #00BCD4;
+        }
+        .product-table tbody tr:nth-child(3) td:nth-child(4) {
+            background-color: #9575CD;
+            color: #FFFFFF;
+        }
+
+        /* Farm Table Styles */
+        .farm-table {
+            border: none; 
+        }
+        .farm-table thead {
+            background-color: #006064;
+            color: #FF0000;
+            font-size: 1.1em;
+        }
+        .farm-table tbody tr:nth-child(odd) td:nth-child(1) {
+            background-color: #C5E1A5;
+            color: #33691E;
+        }
+        .farm-table tbody tr:nth-child(odd) td:nth-child(2) {
+            background-color: #AED581;
+            color: #000000;
+        }
+        .farm-table tbody tr:nth-child(odd) td:nth-child(3) {
+            background-color: #8BC34A;
+            color: #1A237E;
+        }
+        .farm-table tbody tr:nth-child(odd) td:nth-child(4) {
+            background-color: #689F38;
+            color: #FFFFFF;
+        }
+        .farm-table tbody tr:nth-child(even) td:nth-child(1) {
+            background-color: #B3E5FC;
+            color: #01579B;
+        }
+        .farm-table tbody tr:nth-child(even) td:nth-child(2) {
+            background-color: #81D4FA;
+            color: #FF9800;
+        }
+        .farm-table tbody tr:nth-child(even) td:nth-child(3) {
+            background-color: #4FC3F7;
+            color: #000000;
+        }
+        .farm-table tbody tr:nth-child(even) td:nth-child(4) {
+            background-color: #29B6F6;
+            color: #FF00FF;
+        }
+        .farm-table tbody tr:nth-child(3) td:nth-child(1) {
+            background-color: #FFCDD2;
+            color: #D32F2F;
+        }
+        .farm-table tbody tr:nth-child(3) td:nth-child(2) {
+            background-color: #EF9A9A;
+            color: #000000;
+        }
+        .farm-table tbody tr:nth-child(3) td:nth-child(3) {
+            background-color: #E57373;
+            color: #009688;
+        }
+        .farm-table tbody tr:nth-child(3) td:nth-child(4) {
+            background-color: #EF5350;
+            color: #FFFF00;
+        }
+        .farm-table td {
+            border: none; 
+        }
+        .farm-table tbody tr:last-child td {
+            border-bottom: none; 
+        }
+        .farm-table td:last-child {
+            border-right: none; 
+        }
+
+        h1 {
+            color: #1A237E;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAFAFA;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Table 1 — Product Details</h1>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ORANGE</td>
+                <td>KES 40</td>
+                <td>10</td>
+                <td>KES 200</td>
+            </tr>
+            <tr>
+                <td>MANGO</td>
+                <td>KES 50</td>
+                <td>8</td>
+                <td>KES 580</td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td>KES 30</td>
+                <td>12</td>
+                <td>KES 360</td>
+            </tr>
+            <tr>
+                <td>GRAPE</td>
+                <td>KES 60</td>
+                <td>5</td>
+                <td>KES 280</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Table 2 — Farm Information</h1>
+    <table class="farm-table">
+        <thead>
+            <tr>
+                <th>Farm</th>
+                <th>Location</th>
+                <th>Contacts</th>
+                <th>Products</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FODEN</td>
+                <td>ENGLAND</td>
+                <td>0789883388</td>
+                <td>PAPAYA</td>
+            </tr>
+            <tr>
+                <td>OLMO</td>
+                <td>SPAIN</td>
+                <td>0789979988</td>
+                <td>MELON</td>
+            </tr>
+            <tr>
+                <td>MESSI</td>
+                <td>ARGENTINA</td>
+                <td>0708083886</td>
+                <td>Avocado</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
